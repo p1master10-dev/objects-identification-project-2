@@ -13,8 +13,20 @@ function setup() {
             document.getElementById('status').innerText = 'Status : Detecting Objects';
 }
 
+
 function draw() {
             image(img , 0 , 0 ,400 , 400);
+            if(status !== ''){
+                        for(var i = 0;i < objects.length;i++){
+                                    document.getElementById('status').innerText = 'Status : Objects Detected';
+                                    document.getElementById('objects-detected').innerText = 'Number of objects dtected : ' + objects.length;
+                                    var confidenceLevel = floor(objects[i].confidence * 100);
+                                    text(objects[ i ].label + " " + confidenceLevel + "%", objects[ i ].x + 15, objects[ i ].y + 15);
+                                    noFill();
+                                    stroke('#ff0000');
+                                    rect(objects[i].x , objects[i].y , objects[i].width , objects[i].height);
+                        }
+            }
 }
 
 function modelLoaded() {
