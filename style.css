@@ -1,0 +1,55 @@
+body{
+    background-size: cover;
+    font-family: Fira Code;
+}
+
+.header{
+    top: 0%;
+    width: 100%;
+    margin: 0px;
+    font-size: 20px;
+    border-radius: 0;
+}
+
+#note{
+    color: red;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.long{
+    width: 30%;
+}
+
+hr{
+    border: 0.1px solid ;
+    width: 400px;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.back{
+    float: right;
+    margin-right: 10px;
+}
+
+canvas {
+    border: 2px solid whitesmoke;
+    width: 400px;
+    height: 400px;
+}
+
+.btn-success {
+    margin-top: 20px;
+}
+
+.btn-warning {
+    margin-top: 20px;
+}
