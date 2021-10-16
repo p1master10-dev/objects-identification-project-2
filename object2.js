@@ -19,11 +19,11 @@ function draw() {
                         for (var i = 0; i < objects.length; i++) {
                                     document.getElementById('status').innerText = 'Status : Objects Detected';
                                     document.getElementById('objects-detected').innerText = 'Number of objects detected : ' + objects.length;
-                                    var confidenceLevel = floor(objects[ i ].confidence * 100);
-                                    text(objects[ i ].label + " " + confidenceLevel + "%", objects[ i ].x + 15, objects[ i ].y + 15);
+                                    var confidenceLevel = floor(objects[i].confidence * 100);
+                                    text(objects[i].label + " " + confidenceLevel + "%", objects[i].x + 15, objects[i].y + 15);
                                     noFill();
                                     stroke('#ff0000');
-                                    rect(objects[ i ].x, objects[ i ].y, objects[ i ].width, objects[ i ].height);
+                                    rect(objects[i].x, objects[i].y, objects[i].width, objects[i].height);
                         }
             }
 }
